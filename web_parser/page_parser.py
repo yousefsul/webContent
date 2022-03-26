@@ -48,7 +48,7 @@ class PageParser:
                                 "stop_date": self.__stop_date
                             },
                         }
-                        self.__final_content[self.__code] = self.__result
+                        self.__final_content[self.__code] = self.__description.split('Usage')[0]
                     except IndexError:
                         pass
                     break
